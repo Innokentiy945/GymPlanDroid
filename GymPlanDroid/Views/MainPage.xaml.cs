@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO;
-
+using GymPlanDroid.Modals;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -13,12 +13,14 @@ namespace GymPlanDroid.Views
         {
             InitializeComponent();
         }
-
-        private void OnButtonClicked(object sender, System.EventArgs e)
+        
+        private async void ToModalPageTorsoOne(object sender, EventArgs e)
         {
-            Button button = (Button)sender;
-            button.Text = "Button pushed";
-            button.BackgroundColor = Color.Red;
+            await Navigation.PushModalAsync(new ModalPageTorsoOne());
+        }
+        private async void ToModalPageTorsoTwo(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ModalPageTorsoTwo());
         }
     }
 }

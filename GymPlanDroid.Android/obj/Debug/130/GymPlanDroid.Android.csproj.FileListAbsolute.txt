@@ -1,3 +1,12 @@
+A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\bin\Debug\GymPlanDroid.Android.dll
+A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\bin\Debug\GymPlanDroid.Android.pdb
+A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\bin\Debug\com.companyname.gymplandroid.apk
+A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\bin\Debug\com.companyname.gymplandroid.aab
+A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\bin\Debug\com.companyname.gymplandroid-Signed.aab
+A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\bin\Debug\com.companyname.gymplandroid-Signed.apk
+A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\bin\Debug\com.companyname.gymplandroid-Signed.apk.idsig
+A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\bin\Debug\GymPlanDroid.dll
+A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\bin\Debug\GymPlanDroid.pdb
 A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\obj\Debug\130\MonoAndroid,Version=v13.0.AssemblyAttributes.cs
 A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\obj\Debug\130\build.props
 A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\obj\Debug\130\adb.props
@@ -43,15 +52,7 @@ A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\obj\Debug\130\lp\120\jl\files.ca
 A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\obj\Debug\130\R.txt
 A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\obj\Debug\130\R.cs.flag
 A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\obj\Debug\130\GymPlanDroid.Android.csproj.CoreCompileInputs.cache
-A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\bin\Debug\GymPlanDroid.Android.dll
-A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\bin\Debug\GymPlanDroid.Android.pdb
-A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\bin\Debug\com.companyname.gymplandroid.apk
-A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\bin\Debug\com.companyname.gymplandroid.aab
-A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\bin\Debug\com.companyname.gymplandroid-Signed.aab
-A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\bin\Debug\com.companyname.gymplandroid-Signed.apk
-A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\bin\Debug\com.companyname.gymplandroid-Signed.apk.idsig
-A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\bin\Debug\GymPlanDroid.dll
-A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\bin\Debug\GymPlanDroid.pdb
+A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\obj\Debug\130\GymPlanD.7BB7903A.Up2Date
 A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\obj\Debug\130\GymPlanDroid.Android.dll
 A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\obj\Debug\130\GymPlanDroid.Android.pdb
 A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\obj\Debug\130\android\bin\com.companyname.gymplandroid.apk
@@ -701,4 +702,3 @@ A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\obj\Debug\130\stamp\_ConvertReso
 A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\obj\Debug\130\stamp\_GenerateJavaStubs.stamp
 A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\obj\Debug\130\stamp\_GeneratePackageManagerJava.stamp
 A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\obj\Debug\130\stamp\_ResolveLibraryProjectImports.stamp
-A:\GymPlanApp\GymPlanDroid\GymPlanDroid.Android\obj\Debug\130\GymPlanD.7BB7903A.Up2Date

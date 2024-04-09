@@ -1,23 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="GymPlanDroid.Views.MainPage">
-
-    <StackLayout>
-        <Button Text = "General Torso" FontSize="Large" BorderWidth="1"
-                HorizontalOptions="Center" VerticalOptions="CenterAndExpand"
-                Clicked="OnButtonClicked" />
-
-        <Button Text = "General Arms" FontSize="Large" BorderWidth="1"
-                HorizontalOptions="Center" VerticalOptions="CenterAndExpand"
-                Clicked="OnButtonClicked" />
-
-        <Button Text = "General Legs" FontSize="Large" BorderWidth="1"
-                HorizontalOptions="Center" VerticalOptions="CenterAndExpand"
-                Clicked="OnButtonClicked" />
-
-        <Button Text = "General All Round" FontSize="Large" BorderWidth="1"
-                HorizontalOptions="Center" VerticalOptions="CenterAndExpand"
-                Clicked="OnButtonClicked" />
-    </StackLayout>
+﻿<?xml version="1.0" encoding="utf-8" ?>  
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"  
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
+             x:Class="GymPlanDroid.Views.MainPage">  
+  
+    <ScrollView>
+        <StackLayout>  
+            <Button Text="Torso One" Clicked="ToModalPageTorsoOne"/>  
+            <Button Text="Torso Two" Clicked="ToModalPageTorsoTwo"/>
+        </StackLayout>
+    </ScrollView>
+  
 </ContentPage>
