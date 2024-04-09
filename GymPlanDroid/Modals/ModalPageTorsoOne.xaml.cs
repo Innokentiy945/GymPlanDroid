@@ -1,4 +1,5 @@
-﻿using GymPlanDroid.Views;
+﻿using System;
+using GymPlanDroid.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,9 +13,9 @@ namespace GymPlanDroid.Modals
             InitializeComponent();
         }
         
-        private async void ToMainPage()
+        /*private async void ToMainPage(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new MainPage());
-        }
+        }*/
     }
 }

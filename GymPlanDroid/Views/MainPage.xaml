@@ -5,7 +5,7 @@
   
     <ScrollView>
         <StackLayout>  
-            <Button Text="Torso One" Clicked="ToModalPageTorsoOne"/>  
+            <Button Text="Torso One" Clicked="ToModalPageTorsoOne"/>
             <Button Text="Torso Two" Clicked="ToModalPageTorsoTwo"/>
         </StackLayout>
     </ScrollView>
