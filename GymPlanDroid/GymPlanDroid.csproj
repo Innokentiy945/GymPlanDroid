@@ -21,8 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Modals\ModalPageTorsoOne.xaml.cs">
-      <DependentUpon>ModalPageTorsoOne.xaml</DependentUpon>
+    <Compile Update="Modals\ModalPageTorsoTwo.xaml.cs">
+      <DependentUpon>ModalPageTorsoTwo.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

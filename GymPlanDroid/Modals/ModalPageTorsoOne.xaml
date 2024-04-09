@@ -8,6 +8,8 @@
                 <Label Text="Torso One"
                        VerticalOptions="CenterAndExpand"
                        HorizontalOptions="CenterAndExpand"/>
+                
+                <!--<Button Text="Back to main page" Clicked="ToMainPage"/>-->
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
