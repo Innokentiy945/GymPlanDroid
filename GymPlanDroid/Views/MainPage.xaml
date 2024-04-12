@@ -4,10 +4,68 @@
              x:Class="GymPlanDroid.Views.MainPage">  
   
     <ScrollView>
-        <StackLayout>  
-            <Button Text="Torso One" Clicked="ToModalPageTorsoOne"/>
-            <Button Text="Torso Two" Clicked="ToModalPageTorsoTwo"/>
-        </StackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Button Text="Torso One"
+                    x:Name="btn1"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                    Clicked="ToModalPageTorsoOne"
+                    Grid.Row="0"
+                    Grid.Column="0"/>
+            <Button Text="Torso Two"
+                    x:Name="btn2"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                    Clicked="ToModalPageTorsoOne"
+                    Grid.Row="0"
+                    Grid.Column="1"/>
+            <Button Text="Torso Three"
+                    x:Name="btn3"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                    Clicked="ToModalPageTorsoOne"
+                    Grid.Row="0"
+                    Grid.Column="2"/>
+            <Button Text="Arm One"
+                    x:Name="btn4"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                    Clicked="ToModalPageTorsoOne"
+                    Grid.Row="1"
+                    Grid.Column="0"/>
+            <Button Text="Arm Two"
+                    x:Name="btn5"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                    Clicked="ToModalPageTorsoOne"
+                    Grid.Row="1"
+                    Grid.Column="1"/>
+            <Button Text="Arm Three"
+                    x:Name="btn6"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                    Clicked="ToModalPageTorsoOne"
+                    Grid.Row="1"
+                    Grid.Column="2"/>
+        </Grid>
     </ScrollView>
   
 </ContentPage>
