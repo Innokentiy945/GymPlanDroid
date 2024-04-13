@@ -4,10 +4,185 @@
              x:Class="GymPlanDroid.Views.MainPage">  
   
     <ScrollView>
-        <StackLayout>  
-            <Button Text="Torso One" Clicked="ToModalPageTorsoOne"/>
-            <Button Text="Torso Two" Clicked="ToModalPageTorsoTwo"/>
-        </StackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Button Text="Torso One"
+                    x:Name="btn1"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                    Clicked="ToModalPageTorsoOne"
+                    Grid.Row="0"
+                    Grid.Column="0"/>
+            <Button Text="Torso Two"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                    Clicked="ToModalPageTorsoTwo"
+                    Grid.Row="0"
+                    Grid.Column="1"/>
+            <Button Text="Torso Three"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                    Clicked="ToModalPageTorsoOne"
+                    Grid.Row="0"
+                    Grid.Column="2"/>
+            <Button Text="Arm One"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                    Clicked="ToModalPageTorsoOne"
+                    Grid.Row="1"
+                    Grid.Column="0"/>
+            <Button Text="Arm Two"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                    Clicked="ToModalPageTorsoOne"
+                    Grid.Row="1"
+                    Grid.Column="1"/>
+            <Button Text="Arm Three"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                    Clicked="ToModalPageTorsoOne"
+                    Grid.Row="1"
+                    Grid.Column="2"/>
+            
+            <Button Text="Spine Back One"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                    Clicked="ToModalPageTorsoOne"
+                    Grid.Row="2"
+                    Grid.Column="0"/>
+            
+            <Button Text="Spine Back Two"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                    Clicked="ToModalPageTorsoOne"
+                    Grid.Row="2"
+                    Grid.Column="1"/>
+            
+            <Button Text="Spine Back Three"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                    Clicked="ToModalPageTorsoOne"
+                    Grid.Row="2"
+                    Grid.Column="2"/>
+            
+            <Button Text="Butt One"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                    Clicked="ToModalPageTorsoOne"
+                    Grid.Row="3"
+                    Grid.Column="0"/>
+            
+            <Button Text="Butt Two"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                    Clicked="ToModalPageTorsoOne"
+                    Grid.Row="3"
+                    Grid.Column="1"/>
+            
+            <Button Text="Butt Three"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                    Clicked="ToModalPageTorsoOne"
+                    Grid.Row="3"
+                    Grid.Column="2"/>
+            
+            <Button Text="Legs One"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                    Clicked="ToModalPageTorsoOne"
+                    Grid.Row="4"
+                    Grid.Column="0"/>
+            
+            <Button Text="Legs Two"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                    Clicked="ToModalPageTorsoOne"
+                    Grid.Row="4"
+                    Grid.Column="1"/>
+            
+            <Button Text="Legs Three"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                    Clicked="ToModalPageTorsoOne"
+                    Grid.Row="4"
+                    Grid.Column="2"/>
+            
+            <Button Text="All Round One"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                    Clicked="ToModalPageTorsoOne"
+                    Grid.Row="5"
+                    Grid.Column="0"/>
+            
+            <Button Text="All Round Two"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                    Clicked="ToModalPageTorsoOne"
+                    Grid.Row="5"
+                    Grid.Column="1"/>
+            
+            <Button Text="All Round Three"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                    Clicked="ToModalPageTorsoOne"
+                    Grid.Row="5"
+                    Grid.Column="2"/>
+            
+            <Button Text="Stamina One"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                    Clicked="ToModalPageTorsoOne"
+                    Grid.Row="6"
+                    Grid.Column="0"/>
+            
+            <Button Text="Stamina Two"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                    Clicked="ToModalPageTorsoOne"
+                    Grid.Row="6"
+                    Grid.Column="1"/>
+            
+            <Button Text="Stamina Three"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                    Clicked="ToModalPageTorsoOne"
+                    Grid.Row="6"
+                    Grid.Column="2"/>
+        </Grid>
     </ScrollView>
   
 </ContentPage>
