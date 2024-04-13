@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Mime;
 using GymPlanDroid.Model;
 using GymPlanDroid.Views;
 using Xamarin.Forms;
@@ -51,6 +52,7 @@ namespace GymPlanDroid.Modals
                         //VerticalOptions = LayoutOptions.Center,  
                         //HorizontalOptions = LayoutOptions.Center,
                     };
+                    buttonLogo.Clicked += SelectExerciseButton;
                     
                     gridLayout.Children.Add(new BoxView {BackgroundColor = Color.SkyBlue}, columnIndex, rowIndex);
                     gridLayout.Children.Add(buttonLogo, columnIndex, rowIndex);
@@ -59,9 +61,10 @@ namespace GymPlanDroid.Modals
             }
         }
 
-        private void ButtonClickked()
+        private void SelectExerciseButton(object sender, System.EventArgs e)
         {
-            
+            ImageButton button = (ImageButton)sender;
+            button.BackgroundColor = Color.Red;
         }
 
         private List<Exercise> GetDataFromJson()

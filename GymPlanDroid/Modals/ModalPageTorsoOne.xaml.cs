@@ -26,7 +26,7 @@ namespace GymPlanDroid.Modals
             gridLayout.ColumnDefinitions.Add(new ColumnDefinition());  
             gridLayout.ColumnDefinitions.Add(new ColumnDefinition());  
   
-            var exerciseIndex = 0;  
+            var exerciseIndex = 0;
             for (int rowIndex = 0; rowIndex < sportList.Count; rowIndex++)  
             {  
                 for (int columnIndex = 0; columnIndex < 3; columnIndex++)  
@@ -38,30 +38,44 @@ namespace GymPlanDroid.Modals
                     var product = sportList[exerciseIndex];  
                     exerciseIndex += 1; 
                     
-                    var label = new Label  
+                    Label label = new Label  
                     {  
                         Text = product.Name,  
                         VerticalOptions = LayoutOptions.Center,  
                         HorizontalOptions = LayoutOptions.Center,
                     };
                     
-                    var buttonLogo = new ImageButton()
+                    Button buttonLogo = new Button()
                     {
-                        Source = "GymPlanDroid/Images/XamarinLogo.png",
-                        //VerticalOptions = LayoutOptions.Center,  
-                        //HorizontalOptions = LayoutOptions.Center,
+                        //ImageSource = "A:\\GymPlanApp\\GymPlanDroid\\GymPlanDroid\\Images\\XamarinLogo.png",
+                        BackgroundColor = Color.Blue,
                     };
-                    
-                    gridLayout.Children.Add(new BoxView {BackgroundColor = Color.SkyBlue}, columnIndex, rowIndex);
-                    gridLayout.Children.Add(label, columnIndex, rowIndex);
-                    gridLayout.Children.Add(buttonLogo, columnIndex, rowIndex);
+
+                    buttonLogo.Pressed += (sender, args) =>
+                    {
+                        System.Diagnostics.Debug.WriteLine("Pressed");
+                        ImageButton clickButton = (ImageButton)sender;
+                        clickButton.BorderColor = Color.Red;
+                        //clickButton.Source = "A:\\GymPlanApp\\GymPlanDroid\\GymPlanDroid\\Images\\XamarinLogo.png";
+                
+                    };
+                    buttonLogo.Clicked += (sender, args) =>
+                    {
+                        System.Diagnostics.Debug.WriteLine("Unpressed");
+                        ImageButton clickButton = (ImageButton)sender;
+                        clickButton.BackgroundColor = Color.Blue;
+                        //clickButton.Source = "A:\\GymPlanApp\\GymPlanDroid\\GymPlanDroid\\Images\\XamarinLogoBackround.png";
+                    };
+                    IntilizingPage(label, buttonLogo, columnIndex, rowIndex);
+                    IntilizingPage(label, buttonLogo, columnIndex, rowIndex);
                 }  
             }
         }
 
-        private void ButtonClickked()
+        private void IntilizingPage(Label label, Button button, int columnIndex, int rowIndex)
         {
-            
+            gridLayout.Children.Add(button, columnIndex, rowIndex);
+            gridLayout.Children.Add(label, columnIndex, rowIndex);
         }
 
         private List<Exercise> GetDataFromJson()
