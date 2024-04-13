@@ -4,13 +4,9 @@
              x:Class="GymPlanDroid.Modals.ModalPageTorsoOne">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout>
-                <Label Text="Torso One"
-                       VerticalOptions="CenterAndExpand"
-                       HorizontalOptions="CenterAndExpand"/>
-                
-                <!--<Button Text="Back to main page" Clicked="ToMainPage"/>-->
-            </StackLayout>
+            <Grid x:Name="gridLayout">
+                <!--<ImageButton x:Name="imageButton"></ImageButton>-->
+            </Grid> 
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>
