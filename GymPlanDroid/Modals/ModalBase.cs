@@ -1,31 +1,27 @@
-﻿using System;
 using System.Collections.Generic;
-using System.Reflection;
 using GymPlanDroid.Model;
-using GymPlanDroid.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace GymPlanDroid.Modals
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ModalPageTorsoTwo : ContentPage
+    public class ModalBase : ContentPage
     {
         private List<Exercise> sportList;
         
-        public ModalPageTorsoTwo()
+        public ModalBase(Grid gridLayout, ImageButton imageButton, List<Exercise> _sportList)
         {
-            InitializeComponent();
-            GetDataFromJson();
+            sportList = _sportList;
             
             //to modal base
-            GridLayout.RowDefinitions.Add(new RowDefinition());  
-            GridLayout.RowDefinitions.Add(new RowDefinition());
-            GridLayout.RowDefinitions.Add(new RowDefinition());  
-            GridLayout.RowDefinitions.Add(new RowDefinition());
-            GridLayout.ColumnDefinitions.Add(new ColumnDefinition());  
-            GridLayout.ColumnDefinitions.Add(new ColumnDefinition());  
-            GridLayout.ColumnDefinitions.Add(new ColumnDefinition());  
+            gridLayout.RowDefinitions.Add(new RowDefinition());  
+            gridLayout.RowDefinitions.Add(new RowDefinition());
+            gridLayout.RowDefinitions.Add(new RowDefinition());  
+            gridLayout.RowDefinitions.Add(new RowDefinition());
+            gridLayout.ColumnDefinitions.Add(new ColumnDefinition());  
+            gridLayout.ColumnDefinitions.Add(new ColumnDefinition());  
+            gridLayout.ColumnDefinitions.Add(new ColumnDefinition());  
   
             var exerciseIndex = 0;
             for (int rowIndex = 0; rowIndex < sportList.Count; rowIndex++)  
@@ -46,39 +42,29 @@ namespace GymPlanDroid.Modals
                         HorizontalOptions = LayoutOptions.Center,
                     };
                     
-                    ImageButton = new ImageButton
+                    imageButton = new ImageButton
                     {
                         Source = product.ImageUrl,
                         BackgroundColor = Color.CornflowerBlue,
                     };
                     
-                    ImageButton.Clicked += (sender, args) =>
+                    imageButton.Clicked += (sender, args) =>
                     {
                         System.Diagnostics.Debug.WriteLine("Unpressed");
                         ImageButton clickButton = (ImageButton)sender;
                         clickButton.BackgroundColor = Color.Red;
                     };
-                    ImageButton.Pressed += (sender, args) =>
+                    imageButton.Pressed += (sender, args) =>
                     {
                         System.Diagnostics.Debug.WriteLine("Pressed");
                         ImageButton clickButton = (ImageButton)sender;
                         clickButton.BackgroundColor = Color.CornflowerBlue;
                     };
                         
-                    GridLayout.Children.Add(label, columnIndex, rowIndex);
-                    GridLayout.Children.Add(ImageButton, columnIndex, rowIndex);
+                    gridLayout.Children.Add(label, columnIndex, rowIndex);
+                    gridLayout.Children.Add(imageButton, columnIndex, rowIndex);
                 }  
             }
-        }
-
-        private List<Exercise> GetDataFromJson()
-        {
-            sportList = new List<Exercise>();  
-            sportList.Add(new Exercise { Name = "Standing press", ImageUrl = "GymPlanDroid.Android/Resources/drawable/xamarin_logo.png"});  
-            sportList.Add(new Exercise { Name = "Bench press", ImageUrl = "GymPlanDroid.Android/Resources/drawable/xamarin_logo.png"});  
-            sportList.Add(new Exercise { Name = "Arm press", ImageUrl = "GymPlanDroid.Android/Resources/drawable/xamarin_logo.png" });  
-            sportList.Add(new Exercise { Name = "Spine push machine", ImageUrl = "GymPlanDroid.Android/Resources/drawable/xamarin_logo.png" });
-            return sportList;
         }
     }
 }

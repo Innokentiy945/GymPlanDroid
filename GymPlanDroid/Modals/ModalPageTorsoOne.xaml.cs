@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using GymPlanDroid.Model;
-using GymPlanDroid.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace GymPlanDroid.Modals
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ModalPageTorsoOne
+    public partial class ModalPageTorsoOne : ContentPage
     {
         private List<Exercise> sportList;
         
@@ -18,13 +16,13 @@ namespace GymPlanDroid.Modals
             GetDataFromJson();
             
             //to modal base
-            gridLayout.RowDefinitions.Add(new RowDefinition());  
-            gridLayout.RowDefinitions.Add(new RowDefinition());
-            gridLayout.RowDefinitions.Add(new RowDefinition());  
-            gridLayout.RowDefinitions.Add(new RowDefinition());
-            gridLayout.ColumnDefinitions.Add(new ColumnDefinition());  
-            gridLayout.ColumnDefinitions.Add(new ColumnDefinition());  
-            gridLayout.ColumnDefinitions.Add(new ColumnDefinition());  
+            GridLayout.RowDefinitions.Add(new RowDefinition());  
+            GridLayout.RowDefinitions.Add(new RowDefinition());
+            GridLayout.RowDefinitions.Add(new RowDefinition());  
+            GridLayout.RowDefinitions.Add(new RowDefinition());
+            GridLayout.ColumnDefinitions.Add(new ColumnDefinition());  
+            GridLayout.ColumnDefinitions.Add(new ColumnDefinition());  
+            GridLayout.ColumnDefinitions.Add(new ColumnDefinition());  
   
             var exerciseIndex = 0;
             for (int rowIndex = 0; rowIndex < sportList.Count; rowIndex++)  
@@ -45,46 +43,38 @@ namespace GymPlanDroid.Modals
                         HorizontalOptions = LayoutOptions.Center,
                     };
                     
-                    Button buttonLogo = new Button()
+                    ImageButton = new ImageButton
                     {
-                        //ImageSource = "A:\\GymPlanApp\\GymPlanDroid\\GymPlanDroid\\Images\\XamarinLogo.png",
-                        BackgroundColor = Color.Blue,
+                        Source = product.ImageUrl,
+                        BackgroundColor = Color.CornflowerBlue,
                     };
-
-                    buttonLogo.Pressed += (sender, args) =>
-                    {
-                        System.Diagnostics.Debug.WriteLine("Pressed");
-                        ImageButton clickButton = (ImageButton)sender;
-                        clickButton.BorderColor = Color.Red;
-                        //clickButton.Source = "A:\\GymPlanApp\\GymPlanDroid\\GymPlanDroid\\Images\\XamarinLogo.png";
-                
-                    };
-                    buttonLogo.Clicked += (sender, args) =>
+                    
+                    ImageButton.Clicked += (sender, args) =>
                     {
                         System.Diagnostics.Debug.WriteLine("Unpressed");
                         ImageButton clickButton = (ImageButton)sender;
-                        clickButton.BackgroundColor = Color.Blue;
-                        //clickButton.Source = "A:\\GymPlanApp\\GymPlanDroid\\GymPlanDroid\\Images\\XamarinLogoBackround.png";
+                        clickButton.BackgroundColor = Color.Red;
                     };
-                    IntilizingPage(label, buttonLogo, columnIndex, rowIndex);
-                    IntilizingPage(label, buttonLogo, columnIndex, rowIndex);
+                    ImageButton.Pressed += (sender, args) =>
+                    {
+                        System.Diagnostics.Debug.WriteLine("Pressed");
+                        ImageButton clickButton = (ImageButton)sender;
+                        clickButton.BackgroundColor = Color.CornflowerBlue;
+                    };
+                        
+                    GridLayout.Children.Add(label, columnIndex, rowIndex);
+                    GridLayout.Children.Add(ImageButton, columnIndex, rowIndex);
                 }  
             }
-        }
-
-        private void IntilizingPage(Label label, Button button, int columnIndex, int rowIndex)
-        {
-            gridLayout.Children.Add(button, columnIndex, rowIndex);
-            gridLayout.Children.Add(label, columnIndex, rowIndex);
         }
 
         private List<Exercise> GetDataFromJson()
         {
             sportList = new List<Exercise>();  
-            sportList.Add(new Exercise { Name = "Standing press", ImageUrl = "URL"});  
-            sportList.Add(new Exercise { Name = "Bench press", ImageUrl = "URL"});  
-            sportList.Add(new Exercise { Name = "Arm press" });  
-            sportList.Add(new Exercise { Name = "Spine push machine" });
+            sportList.Add(new Exercise { Name = "Standing press", ImageUrl = "GymPlanDroid.Android/Resources/drawable/gym_exercise.png"});  
+            sportList.Add(new Exercise { Name = "Bench press", ImageUrl = "GymPlanDroid.Android/Resources/drawable/gym_exercise.png"});  
+            sportList.Add(new Exercise { Name = "Arm press", ImageUrl = "GymPlanDroid.Android/Resources/drawable/gym_exercise.png" });  
+            sportList.Add(new Exercise { Name = "Spine push machine", ImageUrl = "GymPlanDroid.Android/Resources/drawable/gym_exercise.png" });
             return sportList;
         }
     }

@@ -13,6 +13,7 @@ namespace GymPlanDroid.Views
         {
             InitializeComponent();
         }
+        
         private async void ToModalPageTorsoOne(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new ModalPageTorsoOne());
@@ -21,6 +22,11 @@ namespace GymPlanDroid.Views
         private async void ToModalPageTorsoTwo(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new ModalPageTorsoTwo());
+        }
+        
+        private async void ToModalPageTorsoThree(object sender, EventArgs e)
+        {
+            //await Navigation.PushAsync(new ModalPageTorsoThree());
         }
     }
 }

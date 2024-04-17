@@ -4,7 +4,7 @@
              x:Class="GymPlanDroid.Views.MainPage">  
   
     <ScrollView>
-        <Grid>
+            <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
@@ -38,7 +38,7 @@
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="Center"
                     HeightRequest="{Binding Width, Source={x:Reference btn1}}"
-                    Clicked="ToModalPageTorsoOne"
+                    Clicked="ToModalPageTorsoThree"
                     Grid.Row="0"
                     Grid.Column="2"/>
             <Button Text="Arm One"
