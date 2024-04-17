@@ -4,8 +4,8 @@
              x:Class="GymPlanDroid.Modals.ModalPageTorsoOne">
     <ContentPage.Content>
         <ScrollView>
-            <Grid x:Name="gridLayout">
-                <!--<ImageButton x:Name="imageButton"></ImageButton>-->
+            <Grid x:Name="GridLayout">
+                <ImageButton x:Name="ImageButton"></ImageButton>
             </Grid> 
         </ScrollView>
     </ContentPage.Content>
