@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>  
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"  
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
-             x:Class="GymPlanDroid.Views.MainPage">  
-  
-    <ScrollView>
+             x:Class="GymPlanDroid.Views.MainPage"
+             Title="Your gym plan Brother!">
+          
+        <ScrollView>
             <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
@@ -11,7 +12,6 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
@@ -63,7 +63,7 @@
                     Grid.Row="1"
                     Grid.Column="2"/>
             
-            <Button Text="Spine Back One"
+            <Button Text="Back One"
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="Center"
                     HeightRequest="{Binding Width, Source={x:Reference btn1}}"
@@ -71,7 +71,7 @@
                     Grid.Row="2"
                     Grid.Column="0"/>
             
-            <Button Text="Spine Back Two"
+            <Button Text="Back Two"
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="Center"
                     HeightRequest="{Binding Width, Source={x:Reference btn1}}"
@@ -79,36 +79,12 @@
                     Grid.Row="2"
                     Grid.Column="1"/>
             
-            <Button Text="Spine Back Three"
+            <Button Text="Back Three"
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="Center"
                     HeightRequest="{Binding Width, Source={x:Reference btn1}}"
                     Clicked="ToModalPageTorsoOne"
                     Grid.Row="2"
-                    Grid.Column="2"/>
-            
-            <Button Text="Butt One"
-                    VerticalOptions="CenterAndExpand"
-                    HorizontalOptions="Center"
-                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
-                    Clicked="ToModalPageTorsoOne"
-                    Grid.Row="3"
-                    Grid.Column="0"/>
-            
-            <Button Text="Butt Two"
-                    VerticalOptions="CenterAndExpand"
-                    HorizontalOptions="Center"
-                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
-                    Clicked="ToModalPageTorsoOne"
-                    Grid.Row="3"
-                    Grid.Column="1"/>
-            
-            <Button Text="Butt Three"
-                    VerticalOptions="CenterAndExpand"
-                    HorizontalOptions="Center"
-                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
-                    Clicked="ToModalPageTorsoOne"
-                    Grid.Row="3"
                     Grid.Column="2"/>
             
             <Button Text="Legs One"
@@ -116,7 +92,7 @@
                     HorizontalOptions="Center"
                     HeightRequest="{Binding Width, Source={x:Reference btn1}}"
                     Clicked="ToModalPageTorsoOne"
-                    Grid.Row="4"
+                    Grid.Row="3"
                     Grid.Column="0"/>
             
             <Button Text="Legs Two"
@@ -124,7 +100,7 @@
                     HorizontalOptions="Center"
                     HeightRequest="{Binding Width, Source={x:Reference btn1}}"
                     Clicked="ToModalPageTorsoOne"
-                    Grid.Row="4"
+                    Grid.Row="3"
                     Grid.Column="1"/>
             
             <Button Text="Legs Three"
@@ -132,7 +108,7 @@
                     HorizontalOptions="Center"
                     HeightRequest="{Binding Width, Source={x:Reference btn1}}"
                     Clicked="ToModalPageTorsoOne"
-                    Grid.Row="4"
+                    Grid.Row="3"
                     Grid.Column="2"/>
             
             <Button Text="All Round One"
@@ -140,7 +116,7 @@
                     HorizontalOptions="Center"
                     HeightRequest="{Binding Width, Source={x:Reference btn1}}"
                     Clicked="ToModalPageTorsoOne"
-                    Grid.Row="5"
+                    Grid.Row="4"
                     Grid.Column="0"/>
             
             <Button Text="All Round Two"
@@ -148,7 +124,7 @@
                     HorizontalOptions="Center"
                     HeightRequest="{Binding Width, Source={x:Reference btn1}}"
                     Clicked="ToModalPageTorsoOne"
-                    Grid.Row="5"
+                    Grid.Row="4"
                     Grid.Column="1"/>
             
             <Button Text="All Round Three"
@@ -156,31 +132,7 @@
                     HorizontalOptions="Center"
                     HeightRequest="{Binding Width, Source={x:Reference btn1}}"
                     Clicked="ToModalPageTorsoOne"
-                    Grid.Row="5"
-                    Grid.Column="2"/>
-            
-            <Button Text="Stamina One"
-                    VerticalOptions="CenterAndExpand"
-                    HorizontalOptions="Center"
-                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
-                    Clicked="ToModalPageTorsoOne"
-                    Grid.Row="6"
-                    Grid.Column="0"/>
-            
-            <Button Text="Stamina Two"
-                    VerticalOptions="CenterAndExpand"
-                    HorizontalOptions="Center"
-                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
-                    Clicked="ToModalPageTorsoOne"
-                    Grid.Row="6"
-                    Grid.Column="1"/>
-            
-            <Button Text="Stamina Three"
-                    VerticalOptions="CenterAndExpand"
-                    HorizontalOptions="Center"
-                    HeightRequest="{Binding Width, Source={x:Reference btn1}}"
-                    Clicked="ToModalPageTorsoOne"
-                    Grid.Row="6"
+                    Grid.Row="4"
                     Grid.Column="2"/>
         </Grid>
     </ScrollView>
